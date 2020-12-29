@@ -28,7 +28,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/bootstrap.min.css",
+                "input": "./node_modules/bootstrap/dist/css/",
+                "output": "./assets/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -127,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "amcharts"
+  "defaultProject": "amcharts",
+  "cli": {
+    "analytics": false
+  }
 }
